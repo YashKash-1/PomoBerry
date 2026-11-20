@@ -56,6 +56,6 @@
 <h1>Final Schematic</h1>
 <img width="887" height="717" alt="Screenshot 2026-11-20 124645" src="https://github.com/user-attachments/assets/6a3cea97-44f9-4c0f-be82-5f859ad327ab" />
 
-<h1>ERC Test</h1>
+<h2>ERC Test</h2>
 <img width="884" height="877" alt="Screenshot 2026-11-20 124555" src="https://github.com/user-attachments/assets/0e149295-06e4-483c-90ad-760c120eb71c" />
 
