@@ -59,3 +59,39 @@
 <h2>ERC Test</h2>
 <img width="884" height="877" alt="Screenshot 2026-11-20 124555" src="https://github.com/user-attachments/assets/0e149295-06e4-483c-90ad-760c120eb71c" />
 
+<h2>Session 4: Footprint Assignment &amp; PCB Sync</h2>
+<ul>
+  <li><strong>Date:</strong> November 20, 2026</li>
+  <li><strong>Time spent:</strong> 1 hour (Cumulative: 5.5 hrs)</li>
+  <li><strong>What I did:</strong>
+    <ul>
+      <li>
+        <strong>Assigned footprints for all 14 components:</strong>
+        <ul>
+          <li><code>U1 (ATtiny412)</code>: <code>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</code> (standard SOIC-8).</li>
+          <li><code>C1, R1&ndash;R4, D1&ndash;D3</code>: <code>0805_2012Metric</code> SMD packages. Picked 0805 because it's compact but still easy to hand-solder without a microscope.</li>
+          <li><code>SW2 (Button)</code>: <code>Button_Switch_THT:SW_PUSH_6mm</code> (standard through-hole tactile button).</li>
+          <li><code>SW1 (Power Switch)</code>: <code>Button_Switch_THT:SW_Slide_SPDT_Straight_CK_OS102011MS2Q</code> (vertical slide switch).</li>
+          <li><code>BZ1 (Buzzer)</code>: <code>Buzzer_Beeper:Buzzer_12x9.5RM7.6</code> (standard round piezo).</li>
+          <li><code>BT1 (Battery)</code>: <code>Battery:BatteryHolder_Keystone_3002_1x2032</code> (CR2032 coin cell clip).</li>
+          <li><code>J1 (UPDI Header)</code>: <code>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</code>.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>PCB Netlist Import:</strong> Ran "Update PCB from Schematic" to pull all footprints and ratsnest connections into the PCB editor.
+        <strong>Result: 0 errors!</strong> Everything synced cleanly on the first try.
+      </li>
+      <li>Next: Component placement, flipping the battery to the bottom layer, and drawing the board outline.</li>
+    </ul>
+  </li>
+</ul>
+
+<img width="1917" height="937" alt="Screenshot 2026-11-20 145532" src="https://github.com/user-attachments/assets/1a1df19d-1854-4dea-9674-cc4c5304e214" />
+
+<h2>PCB Update </h2>
+
+<h3>DRC Test</h3>
+
+<h5>First time i got 0 error and 0 warring in DRC test i am so <b>happy woohooo!!!!!</b></h5>
+
+<img width="797" height="722" alt="Screenshot 2026-11-20 144835" src="https://github.com/user-attachments/assets/93255565-7301-4e32-b0ef-c41a992f283c" />
