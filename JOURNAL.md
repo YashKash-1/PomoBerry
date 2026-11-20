@@ -32,3 +32,30 @@
 </ul>
 
 <img width="822" height="542" alt="image" src="https://github.com/user-attachments/assets/dfcfcaca-9226-4d1f-9954-09e94565c504" />
+
+<h2>Session 3: Finishing the Schematic &amp; Passing ERC</h2>
+<ul>
+  <li><strong>Date:</strong> November 20, 2026</li>
+  <li><strong>Time spent:</strong> 1.5 hours (Cumulative: 4.5 hrs)</li>
+  <li><strong>What I did:</strong>
+    <ul>
+      <li>Wired the three phase LEDs (D1, D2, D3) to pins 4, 5 and 7 of the ATtiny412, each with a 300 &Omega; resistor to GND.</li>
+      <li>
+        <strong>Running ERC:</strong> I ran KiCad's electrical rules check before starting the layout.
+        <ul>
+          <li><strong>First run:</strong> 3 errors. One was an unconnected pin on the slide switch, and the other two were KiCad saying nothing was driving the VCC and GND nets.</li>
+          <li><strong>Fixes:</strong> I put a no-connect flag on SW1 pin 3 (the OFF side, which I don't use) and added a PWR_FLAG on VCC and one on GND so KiCad knows the battery is the power source.</li>
+          <li><strong>Second run:</strong> 0 errors, 0 warnings. All 8 pins of the ATtiny are accounted for.</li>
+        </ul>
+      </li>
+      <li>Next: assign footprints and start the PCB layout.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1>Final Schematic</h1>
+<img width="887" height="717" alt="Screenshot 2026-11-20 124645" src="https://github.com/user-attachments/assets/6a3cea97-44f9-4c0f-be82-5f859ad327ab" />
+
+<h1>ERC Test</h1>
+<img width="884" height="877" alt="Screenshot 2026-11-20 124555" src="https://github.com/user-attachments/assets/0e149295-06e4-483c-90ad-760c120eb71c" />
+
