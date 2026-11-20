@@ -1,6 +1,6 @@
 <h1>8-Pin Grant Design Journal: PomoBerry (Pomodoro Timer)</h1>
 
-<p><strong>Total Time Logged:</strong> 3 / 7 Hours</p>
+<p><strong>Total Time Logged:</strong> 4.5 / 8 Hours</p>
 
 <h2>Session 1: Project Setup &amp; Concept</h2>
 <ul>
