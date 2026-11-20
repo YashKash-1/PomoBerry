@@ -172,12 +172,9 @@ I thought 7 hrs are enough but i changed it to 8 then 10 now 12 but I took more 
 <h4>This one I liked</h4>
 <img width="1412" height="950" alt="Screenshot 2026-11-20 221314" src="https://github.com/user-attachments/assets/1e5642d0-455d-4665-ae14-411deca27d17" />
 
+<li>
+  <strong>Troubleshooting KiCanvas:</strong> When I first opened my KiCanvas link for the submission form, nothing was loading and the page was completely blank. I couldn't figure out what was wrong at first and spent some time trying to debug the link. Turns out it was such a silly mistake—I had finished the whole PCB in KiCad locally, but I had completely forgotten to actually upload my <code>.kicad_pcb</code> and <code>.kicad_sch</code> files to my GitHub repo! KiCanvas literally had no files to read. Once I committed both KiCad files to GitHub, the link loaded immediately and showed the full interactive board in the browser. It was a funny moment, but it taught me how KiCanvas actually pulls files from GitHub.
+</li>
 
-
-
-
-
-
-
-
-
+<h2>Kicanvas Schematic png</h2>
+<img width="1872" height="972" alt="image" src="https://github.com/user-attachments/assets/719bbbc7-86fb-454c-847b-c656fb9d4ed7" />
