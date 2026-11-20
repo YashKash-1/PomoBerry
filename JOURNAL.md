@@ -1,7 +1,7 @@
 <h1>8-Pin Grant Design Journal: PomoBerry (Pomodoro Timer)</h1>
 
 <p><strong>Total Time Logged:</strong> 13.5 / 12 Hours</p>
-I thought 7 hrs are enough but i changed it to 8 then 10 now 12 but I took more then 13.5 hrs I think , but it worth it..
+<p>I thought 7 hrs are enough but i changed it to 8 then 10 now 12 but I took more then 13.5 hrs I think , but it worth it..</p>
 
 <h2>Session 1: Project Setup &amp; Concept</h2>
 <ul>
@@ -138,12 +138,12 @@ I thought 7 hrs are enough but i changed it to 8 then 10 now 12 but I took more 
 <h2>Session 7: Fixing DRC Errors, BOM &amp; Final Board</h2>
 <ul>
   <li><strong>Date:</strong> November 20, 2026</li>
-  <li><strong>Time spent:</strong> 2.5 hours (Cumulative: 12.0 hrs)</li>
+  <li><strong>Time spent:</strong> 4 hours (Cumulative: 13.5 hrs)</li>
   <li><strong>What I did:</strong>
     <ul>
-      <li>Ran KiCad's Design Rules Checker (DRC) to check for mistakes:
+      <li>Ran KiCad's Design Rules Checker (DRC) to fix the last few issues:
         <ul>
-          <li>Got a "malformed outline" error because my outer square was accidentally drawn on the copper layer. Selected the outline, hit E, and changed the layer to <code>Edge.Cuts</code> so KiCad knows the actual physical cut shape of the board.</li>
+          <li>Got a "malformed outline" error because my outer square was accidentally drawn on the copper layer. Selected it, hit E, and changed the layer to <code>Edge.Cuts</code> so KiCad knows the actual physical cut shape of the board.</li>
           <li>Got a drilled hole collision on the buzzer because I placed a via right inside pad 2. Since the buzzer is already a through-hole part with a drilled hole, I deleted the extra via and drew the trace straight into the pad.</li>
           <li>Nudged a couple silkscreen labels so they didn't overlap the LED outlines.</li>
         </ul>
@@ -152,29 +152,31 @@ I thought 7 hrs are enough but i changed it to 8 then 10 now 12 but I took more 
         <strong>Final DRC Result:</strong> <strong>0 Errors, 0 Unconnected items!</strong> Every single connection is verified and finished.
       </li>
       <li>Exported the Bill of Materials (BOM) to CSV through the Symbol Fields editor.</li>
-      <li>Checked the completed board in the 3D viewer and set up the interactive KiCanvas link. The board is 100% ready for fabrication!</li>
+      <li>
+        <strong>Troubleshooting KiCanvas:</strong> When I first opened my KiCanvas link for the submission form, nothing was loading and the page was completely blank. I couldn't figure out what was wrong at first and spent some time trying to debug the link. Turns out it was such a silly mistake—I had finished the whole PCB in KiCad locally, but I had completely forgotten to actually upload my <code>.kicad_pcb</code> and <code>.kicad_sch</code> files to my GitHub repo! KiCanvas literally had no files to read. Once I committed both KiCad files to GitHub, the link loaded immediately and showed the full interactive board in the browser. It was a funny moment, but it taught me how KiCanvas actually pulls files from GitHub.
+      </li>
     </ul>
   </li>
 </ul>
 
 <h2>Final Board &amp; DRC Test</h2>
-<h2>DRC Test </h2>
-<img alt="Final DRC 0 Errors" src=<img width="797" height="722" alt="Screenshot 2026-11-20 144835" src="https://github.com/user-attachments/assets/c804f02c-b8ce-4e23-b6b0-be04a3acf31d" />
- />
- <h2>Routed PCB Interface</h2>
-<img alt="Final Routed PCB" src= /><img width="672" height="677" alt="Screenshot 2026-11-20 153556" src="https://github.com/user-attachments/assets/3d8358bc-e506-4c59-a116-8b07e8e59294" />
+
+<h3>DRC Test</h3>
+<img width="797" height="722" alt="Screenshot 2026-11-20 144835" src="https://github.com/user-attachments/assets/c804f02c-b8ce-4e23-b6b0-be04a3acf31d" />
+
+<h2>Routed PCB Interface</h2>
+<img width="672" height="677" alt="Screenshot 2026-11-20 153556" src="https://github.com/user-attachments/assets/3d8358bc-e506-4c59-a116-8b07e8e59294" />
+
 <h2>3D View of the PCB</h2>
+
 <h4>Front View</h4>
-<img alt="Final 3D View" src= /><img width="1127" height="918" alt="Screenshot 2026-11-20 221216" src="https://github.com/user-attachments/assets/0e06ed42-03f1-4268-b7f0-74ff14ec37f2" />
+<img width="1127" height="918" alt="Screenshot 2026-11-20 221216" src="https://github.com/user-attachments/assets/0e06ed42-03f1-4268-b7f0-74ff14ec37f2" />
 
 <h4>Back view</h4>
 <img width="1086" height="916" alt="Screenshot 2026-11-20 221222" src="https://github.com/user-attachments/assets/3db7d4c3-de38-4eb4-a664-e06cfa62f257" />
+
 <h4>This one I liked</h4>
 <img width="1412" height="950" alt="Screenshot 2026-11-20 221314" src="https://github.com/user-attachments/assets/1e5642d0-455d-4665-ae14-411deca27d17" />
 
-<li>
-  <strong>Troubleshooting KiCanvas:</strong> When I first opened my KiCanvas link for the submission form, nothing was loading and the page was completely blank. I couldn't figure out what was wrong at first and spent some time trying to debug the link. Turns out it was such a silly mistake—I had finished the whole PCB in KiCad locally, but I had completely forgotten to actually upload my <code>.kicad_pcb</code> and <code>.kicad_sch</code> files to my GitHub repo! KiCanvas literally had no files to read. Once I committed both KiCad files to GitHub, the link loaded immediately and showed the full interactive board in the browser. It was a funny moment, but it taught me how KiCanvas actually pulls files from GitHub.
-</li>
-
-<h2>Kicanvas Schematic png</h2>
+<h2>KiCanvas Schematic png</h2>
 <img width="1872" height="972" alt="image" src="https://github.com/user-attachments/assets/719bbbc7-86fb-454c-847b-c656fb9d4ed7" />
