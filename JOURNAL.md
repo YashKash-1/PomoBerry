@@ -95,3 +95,27 @@
 <h5>First time i got 0 error and 0 warring in DRC test i am so <b>happy woohooo!!!!!</b></h5>
 
 <img width="797" height="722" alt="Screenshot 2026-11-20 144835" src="https://github.com/user-attachments/assets/93255565-7301-4e32-b0ef-c41a992f283c" />
+
+<h2>Session 5: Placing the Parts &amp; 3D View</h2>
+<ul>
+  <li><strong>Date:</strong> November 20, 2026</li>
+  <li><strong>Time spent:</strong> 1 hour (Cumulative: 6.5 hrs)</li>
+  <li><strong>What I did:</strong>
+    <ul>
+      <li>Moved all the parts onto the board and worked out where each one goes.</li>
+      <li>Put C1 right up against the ATtiny's power pins so it can do its job.</li>
+      <li>Lined the 3 LEDs up in a column on the right, with each 300 &Omega; resistor next to its LED. This should keep the traces short and straight instead of crossing each other.</li>
+      <li>Buzzer is bottom left. The button is in the middle so a thumb can reach it easily. The power switch is on the right.</li>
+      <li>Squeezed the buzzer's 100 &Omega; resistor (R1) in between the buzzer and the button.</li>
+      <li>Hit Alt+3 to check the 3D view. Looked clean to me: nothing overlaps, and the tall parts (buzzer and switch) don't block anything.</li>
+      <li>Next: route the copper traces.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>PCB Layout without tracing</h2>
+<img width="917" height="791" alt="Screenshot 2026-11-20 184118" src="https://github.com/user-attachments/assets/201740a1-98a5-4596-90ac-85986d7cd125" />
+
+<h2>3D View without tracing</h2>
+<img width="693" height="607" alt="Screenshot 2026-11-20 184050" src="https://github.com/user-attachments/assets/da2a163f-b675-4db9-92b2-a84844a2b91e" />
+
